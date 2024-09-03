@@ -1,0 +1,54 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    gap:100px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    
+}
+.navbar__logo{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.navbar__logo-image{
+    width: 50px;
+    height: auto;
+}
+.navbar__logo h1{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.navbar__sections-item{
+    font-size: 15px;
+}
+.navbar__icons-item{
+    width: 25px;
+    height: auto;
+}
+
+.background__image{
+    width: 100%;
+}
+.background__box{
+    width: 600px;
+    height: 200px;
+    background-color: #FFF3E3;
+}
+.background__box p{
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.browse__rooms{
+    display: flex;
+    align-items: center;
+}
+.browse__rooms img{
+    width: 20%;
+    height: auto;
+}
