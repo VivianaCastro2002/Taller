@@ -6,22 +6,22 @@
 
     <div v-if="randomManga">
         <h3>Random Manga</h3>
-        <p>{{ randomManga }}</p>
+        <pre>{{ randomManga }}</pre>
     </div>
 
     <div v-if="randomAnime">
         <h3>Random Anime</h3>
-        <p>{{ randomAnime }}</p>
+        <pre>{{ randomAnime }}</pre>
     </div>
 
     <div v-if="countriesPopulation">
         <h3>Countries Population</h3>
-        <p>{{ countriesPopulation }}</p>
+        <pre>{{ countriesPopulation }}</pre>
     </div>
 
     <div v-if="animeRecomendations">
         <h3>Anime Recomendations</h3>
-        <p>{{ animeRecomendations }}</p>
+        <pre>{{ animeRecomendations }}</pre>
     </div>
 </template>
 
