@@ -1,8 +1,8 @@
 <template>
-    <button >Random Manga</button>
-    <button >Random Anime</button>
-    <button >Random Country</button>
-    <button >Random Anime Recomendations</button>
+    <button @click="fetchRandomManga">Random Manga</button>
+    <button @click="fetchRandomAnime">Random Anime</button>
+    <button @click="fetchCountriesPopulation">Random Country</button>
+    <button @click="fetchAnimeRecomendation">Random Anime Recomendations</button>
 
     <div v-if="randomManga">
         <h3>Random Manga</h3>
