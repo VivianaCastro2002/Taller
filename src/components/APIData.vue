@@ -24,3 +24,25 @@
         <p>{{ animeRecomendations }}</p>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            randomManga: null,
+            randomAnime: null,
+            countriesPopulation: null,
+            animeRecomendations: null
+        };
+    },
+    methods: {
+        async fetchRandomManga(){
+            try {
+                const response = await fetch('https://api.jikan.moe/v4/random/manga');
+                const data = await response.json();
+                this.randomManga = data;
+            } catch (error){
+                console.error("Error fetching random manga:", error);
+            }
+        },
+}
+</script>
