@@ -44,5 +44,15 @@ export default {
                 console.error("Error fetching random manga:", error);
             }
         },
+        async fetchRandomAnime(){
+            try {
+                const response = await fetch('https://api.jikan.moe/v4/random/anime');
+                const data = await response.json();
+                this.randomAnime = data;
+            } catch (error){
+                console.error("Error fetching random Anime:", error);
+            }
+        },
+
 }
 </script>
