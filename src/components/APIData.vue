@@ -54,5 +54,15 @@ export default {
             }
         },
 
+        async fetchCountriesPopulation(){
+            try {
+                const response = await fetch('https://countriesnow.space/api/v0.1/countries/population');
+                const data = await response.json();
+                this.countriesPopulation = data;
+            } catch (error){
+                console.error("Error fetching countries population:", error);
+            }
+        },
+
 }
 </script>
