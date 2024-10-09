@@ -1,29 +1,19 @@
-# taller-3
+Este proyecto es una aplicación sencilla en Vue.js que permite obtener datos de diferentes APIs, mostrando manga, anime, población de países y recomendaciones de anime.
 
-This template should help get you started developing with Vue 3 in Vite.
+## Descripción
 
-## Recommended IDE Setup
+La aplicación cuenta con cuatro botones que permiten al usuario obtener diferentes tipos de datos aleatorios o de consulta a través de llamadas a APIs externas:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Random Manga**: Obtiene un manga aleatorio desde la API de Jikan.
+- **Random Anime**: Obtiene un anime aleatorio desde la API de Jikan.
+- **Random Country**: Obtiene datos de la población de países usando la API de Countries Now.
+- **Random Anime Recommendations**: Obtiene recomendaciones de anime desde la API de Jikan.
 
-## Customize configuration
+Cada consulta realizada a las APIs muestra los resultados en pantalla bajo el botón correspondiente.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Estructura del Proyecto
 
-## Project Setup
+El proyecto cuenta con los siguientes componentes principales:
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+- **App.vue**: Componente raíz de la aplicación que contiene el layout básico.
+- **APIData.vue**: Componente que gestiona las llamadas a las APIs y la visualización de los datos obtenidos.
