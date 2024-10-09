@@ -24,6 +24,7 @@
         <p>{{ animeRecomendations }}</p>
     </div>
 </template>
+
 <script>
 export default {
     data() {
@@ -44,6 +45,7 @@ export default {
                 console.error("Error fetching random manga:", error);
             }
         },
+
         async fetchRandomAnime(){
             try {
                 const response = await fetch('https://api.jikan.moe/v4/random/anime');
@@ -77,3 +79,14 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+</style>
