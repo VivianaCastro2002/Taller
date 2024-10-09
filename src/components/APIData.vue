@@ -64,5 +64,16 @@ export default {
             }
         },
 
+        async fetchAnimeRecomendation(){
+            try {
+                const response = await fetch('https://api.jikan.moe/v4/recommendations/anime');
+                const data = await response.json();
+                this.animeRecomendations = data;
+            } catch (error){
+                console.error("Error fetching random manga:", error);
+            }
+        },
+
+    }
 }
 </script>
